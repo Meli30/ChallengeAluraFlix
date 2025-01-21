@@ -1,0 +1,61 @@
+{
+    "videos": [
+      {
+        "id": "1",
+        "title": "Curso online Gestion agil liderando cambio",
+        "category": "Innovación y Gestión",
+        "url": "https://www.aluracursos.com/curso-online-gestion-agil-liderando-cambio",
+        "descripcion": "Aprende cómo liderar cambios organizacionales con metodologías ágiles.",
+        "imagen": ""
+      },
+      {
+        "id": "4",
+        "title": "hh",
+        "category": "Back End",
+        "url": "https://www.aluracursos.com/curso-online-agile-coach-lidere-transformacion-empresas",
+        "descripcion": "Aprende a ser un Agile Coach y liderar la transformación en empresas.",
+        "imagen": "https://www.aluracursos.com/images/cursos/agile-coach.jpg"
+      },
+      {
+        "id": "7",
+        "title": "Arquitectura CSS: Resolviendo Problemas",
+        "category": "Frontend",
+        "url": "https://www.aluracursos.com/curso-online-arquitectura-css-descomplicando-los-problemas",
+        "descripcion": "Comprende la arquitectura CSS para organizar mejor tus estilos.",
+        "imagen": "https://www.aluracursos.com/images/cursos/arquitectura-css.jpg"
+      },
+      {
+        "id": "8",
+        "title": "CSS Flexbox: Layouts Responsivos",
+        "category": "Frontend",
+        "url": "https://www.aluracursos.com/curso-online-css-flexbox-layouts-responsivos",
+        "descripcion": "Crea layouts responsivos utilizando CSS Flexbox.",
+        "imagen": "https://www.aluracursos.com/images/cursos/css-flexbox.jpg"
+      },
+      {
+        "id": "9",
+        "title": "Node.js: Creando API REST con Express y MongoDB",
+        "category": "Backend",
+        "url": "https://www.aluracursos.com/curso-online-node-js-creando-api-rest-express-mongodb",
+        "descripcion": "Aprende a construir APIs REST con Express y MongoDB.",
+        "imagen": "https://www.aluracursos.com/images/cursos/nodejs-api-rest.jpg"
+      },
+      {
+        "id": "10",
+        "title": "Angular: Primeros Pasos con el Framework",
+        "category": "Frontend",
+        "url": "https://www.aluracursos.com/curso-online-angular-empezando-framework",
+        "descripcion": "Descubre cómo empezar con el framework Angular.",
+        "imagen": "https://www.aluracursos.com/images/cursos/angular-principiante.jpg"
+      },
+      {
+        "id": "11",
+        "title": "ORM en Node.js: Sequelize Avanzado",
+        "category": "Backend",
+        "url": "https://www.aluracursos.com/curso-online-orm-node-js-avanzando-funcionalidades-sequelize",
+        "descripcion": "Explora funcionalidades avanzadas con Sequelize en Node.js.",
+        "imagen": "2wCEAAkGBw0PDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhcRFxUYHyggGBolGxUVITEhJSkrLy4uFx8zODMsNygtLisBCgoKDg0NGhAQGS8eHSUtMCstLSsrLSsvLTAtLS0tLSsrLi0tLS0tLS0yLSsrKysrLSsrLS0tKystKy0tKy0tLf"
+      }
+    ]
+  }
+  
