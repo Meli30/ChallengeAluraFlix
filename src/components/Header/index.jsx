@@ -1,52 +1,47 @@
-import React from "react"
-import styled from "styled-components";
-import { useState } from "react";
-import Formulario from "../Formulario";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Formulario from "../Formulario";// Asegúrate de que este componente esté importado correctamente
+import styled from "styled-components";
 
-const HeaderEstilizado = styled.header `
-   display: flex;
-   justify-content: space-between;
-   padding:20px;
-   background-color: #262626;
-   
-  
-`
+// Aquí va tu estilo del Header
+const HeaderEstilizado = styled.header`
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+`;
+
 const Logo = styled.img`
- width: 212px;
-`
+  height: 50px;
+`;
 
 const Nav = styled.nav`
   display: flex;
-  gap: 15px;
-  height: 100%;
-  background-color: #262626;
+  gap: 20px;
 `;
 
 const Boton = styled.button`
-  background-color: #1e00ff;
+  background-color: ${(props) => (props.$destacado ? "#007bff" : "#333")};
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 20px;
   cursor: pointer;
-  font-size: 16px;
   border-radius: 5px;
-  
+
   &:hover {
-    background-color: #7956e0;
+    background-color: #0056b3;
   }
 `;
 
 const Header = () => {
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
 
-
-    return (
-      <HeaderEstilizado>
-      <Logo src="img/LogoMain.png" alt="Logo de Alura Flix"/>
+  return (
+    <HeaderEstilizado>
+      <Logo src="img/LogoMain.png" alt="Logo de Alura Flix" />
       <Nav>
         <Link to="/" aria-label="Ir a la página de inicio">
-          <Boton>Home</Boton>
+          <Boton $destacado>Home</Boton>
         </Link>
         <Link to="/nuevo-video" aria-label="Subir nuevo video">
           <Boton onClick={() => setMostrarFormulario(true)}>
@@ -58,8 +53,7 @@ const Header = () => {
       {/* Mostrar el formulario si el estado es true */}
       {mostrarFormulario && <Formulario onClose={() => setMostrarFormulario(false)} />}
     </HeaderEstilizado>
-);
-
+  );
 };
 
 export default Header;

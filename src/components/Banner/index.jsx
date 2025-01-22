@@ -6,14 +6,15 @@ const BannerContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+
   
 `
 
 const BannerContent = styled.div`
   border-radius: 10px;
   img{
-    width:100%; 
-    height: 50%;
+  width: 100%;
+  height: 100%;
   }
 `
 const BannerCard = styled.div`
@@ -26,7 +27,7 @@ justify-content: center;
     width: 80%;
     height: 30%;
     position: absolute;
-    top: 450px;
+    top: 400px;
  }
 
 

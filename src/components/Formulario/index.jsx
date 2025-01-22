@@ -14,68 +14,66 @@ const Modal = styled.div`
 `;
 
 const ModalContent = styled.div`
-  background: white;
+  background: #03122F;
+  color: white;
   padding: 20px;
   border-radius: 8px;
-  width: 800px;
-  display: flex;
-  flex-direction: column;
-;
+  width: 700px;
+  text-align: center;
 
-form{
-    
-}
-
-  h2{
-    text-align: center;
-    font-size: 30px;
+  form{
+    display: flex;
+    flex-direction: column;
   }
 
-  p{
-    text-align: center;
+  h2{
+    font-size: 40px;
   }
 
   label{
-    font-size: 15px;
+    text-align: left;
   }
- 
-  
 `;
 
 const Input = styled.input`
+ background-color: #03122F;
   padding: 8px;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
- 
+  color: white;
 `;
 
 const Select = styled.select`
-
   padding: 8px;
+  color: white;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
-`
+  background-color: #03122F;
+`;
 
 const Textarea = styled.textarea`
   padding: 8px;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
-`
+  background-color: #03122F;
+  color: white;
+`;
 
 const Boton = styled.button`
   padding: 10px 15px;
   margin: 5px;
-  background-color: #ff0000;
-  color: white;
+  background-color: #e5e8ed;
+  color: #080808;
   border: none;
   cursor: pointer;
   border-radius: 5px;
 
   &:hover {
-    background-color: #cc0000;
+    background-color: #efcdcd;
+    color:black
   }
 `;
 
@@ -83,34 +81,31 @@ const Formulario = ({ onClose }) => {
   return (
     <Modal>
       <ModalContent>
-        <h2>Nuevo Video</h2>
-        <p>COMPLETE EL FORMULARIO PARA CREAR UNA NUEVA TAREJTA DE VIDEO</p>
         <form>
+          <h2>Nuevo Video</h2>
+          <p>COMPLETE EL FORMULARIO PARA CREAR UNA NUEVA TARJETA DE VIDEO</p>
+
           <label>Título</label>
           <Input type="text" name="titulo" required />
 
           <label>Categoría</label>
-             <Select name="categoría">
-              <option>Front End</option>
-
-              <option>Back End</option>
-
-              <option>Innovación y Gestión</option>
-
-              </Select>
-             
+          <Select name="categoría">
+            <option>Front End</option>
+            <option>Back End</option>
+            <option>Innovación y Gestión</option>
+          </Select>
 
           <label>Imagen</label>
-          <Input type="url" name="url" required />
+          <Input type="url" name="imagen" required />
 
           <label>Video</label>
           <Input type="url" name="url" required />
 
           <label>Descripción</label>
-          <Textarea />
+          <Textarea name="descripcion" />
 
           <Boton type="submit">Guardar</Boton>
-          <Boton type="button" onClick={onClose}>Limpiar</Boton>
+          <Boton type="button" onClick={onClose}>Cerrar</Boton>
         </form>
       </ModalContent>
     </Modal>

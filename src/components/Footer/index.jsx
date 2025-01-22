@@ -7,7 +7,7 @@ const FooterEstilizado = styled.footer`
    padding:50px;
    background-color: #262626;
 
-   h1{
+   h5{
     color:white
    }
     
@@ -23,7 +23,7 @@ const Footer = () => {
     return (
         <FooterEstilizado>
             <Logo src="img/footer.png" alt="Logo de Alura Flix" />
-                <h1>Desarrollado por Melisa Fernández</h1>
+                <h5>Desarrollado por Melisa Fernández</h5>
              
         </FooterEstilizado>
     )
